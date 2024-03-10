@@ -1,0 +1,9 @@
+{
+  "name": "compiling-theory-exp",
+  "scripts": {
+    "test": "ts-node src/index.ts",
+    "f": "prettier -w **/*"
+  },
+  "author": "Penyo",
+  "license": "WTFPL"
+}
