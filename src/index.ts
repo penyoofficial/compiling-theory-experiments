@@ -1,11 +1,5 @@
-import { GrammarParser } from "./util/GrammarParser";
+import { Grammar } from "./util/Grammar";
 
-const sampleInput = `E->E+T
-E->T
-T->T*F
-T->F
-F->(E)
-F->i`;
+const sampleInput = ["E->E+T", "E->T", "T->T*F", "T->F", "F->(E)", "F->i"];
 
-const parser = new GrammarParser(sampleInput.split("\n"));
-console.log(parser.grammar.toString());
+console.log(`${Grammar.fromProductions(sampleInput)}`);
